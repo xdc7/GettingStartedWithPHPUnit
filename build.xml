@@ -1,4 +1,4 @@
-<project name="user">
+<project name="GettingStartedWithPHPUnit">
 <exec executable="phpunit" failonerror="true">
   <arg line="UnitTest UserTest.php" />
  </exec>
