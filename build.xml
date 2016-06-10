@@ -2,5 +2,5 @@
 <exec executable="phpunit" failonerror="true">
   <arg line=" UnitTest UserTest.php" />
  </exec>
- <copy file="User.php" tofile="builds/User.php"/>
+ <copy file="User.php" tofile="/var/www/html/simple_app/User.php"/>
 </project>
