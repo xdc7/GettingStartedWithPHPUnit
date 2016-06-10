@@ -1,6 +1,0 @@
-<project name="user">
- <exec executable="phpunit" failonerror="true">
-  <arg line="UnitTest UserTest.php" />
- </exec>
- <copy file="../include/User.php" tofile="../builds/User.php"/>
-</project>
