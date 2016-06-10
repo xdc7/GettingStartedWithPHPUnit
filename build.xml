@@ -1,6 +1,12 @@
 <project name="user">
- <exec executable="phpunit" failonerror="true">
+<target name="unittests">
+<ant antfile="./build.xml" dir="tests" target="deployFiles" inheritAll="true" inheritRefs="true" /> 
+<exec executable="phpunit" failonerror="true">
   <arg line="UnitTest UserTest.php" />
  </exec>
+</target>
+<target name="deployFiles">
+<ant antfile="../build.xml" dir="../" inheritAll="true" inheritRefs="true"/>
  <copy file="include/User.php" tofile="builds/User.php"/>
+</target>
 </project>
